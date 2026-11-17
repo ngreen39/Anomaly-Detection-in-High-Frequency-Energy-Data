@@ -1,0 +1,7 @@
+scenario,partition,source_records,retained_records,retained_observed_records,imputed_records,imputed_values,excluded_records,original_missing_records,invalid_measurement_records
+observed_only,all,2075259,2049280,2049280,0,0,25979,25979,0
+observed_only,train_period,1600236,1591886,1591886,0,0,8350,8350,0
+observed_only,test_period,475023,457394,457394,0,0,17629,17629,0
+short_gap_sensitivity,all,2075259,2049356,2049280,76,532,25903,25979,0
+short_gap_sensitivity,train_period,1600236,1591952,1591886,66,462,8284,8350,0
+short_gap_sensitivity,test_period,475023,457404,457394,10,70,17619,17629,0

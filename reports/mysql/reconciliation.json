@@ -1,0 +1,39 @@
+{
+  "database": "energy_dq_audit_local_f5b463bdde8b",
+  "mysql_version": "9.4.0",
+  "source_sha256": "4259c9d7ece5dbee9ab8d53682baac68d791c864f0f64a52b4043cb3b90894b7",
+  "python_audit_summary_sha256": "6c11c7ed02aad66192934df5ca6629c7c90ff8841005248d3b8e61d76b169fe6",
+  "counts": {
+    "source_rows": 2075259,
+    "duplicate_rows": 0,
+    "duplicate_timestamps": 0,
+    "invalid_timestamps": 0,
+    "off_minute_timestamps": 0,
+    "missing_measurement_rows": 25979,
+    "all_measurements_missing_rows": 25979,
+    "missing_measurement_cells": 181853,
+    "invalid_numeric_cells": 0,
+    "negative_cells": 0,
+    "infinite_cells": 0,
+    "absent_timestamp_rows": 0,
+    "missing_run_count": 71,
+    "missing_minutes_in_runs": 25979,
+    "longest_missing_run_minutes": 7226
+  },
+  "exception_records": 181853,
+  "reconciliation": {
+    "totals_match": true,
+    "every_run_matches": true,
+    "every_month_matches": true,
+    "exception_count_matches": true,
+    "python_artifacts_unchanged": true
+  },
+  "known_sql_fixture_passed": true,
+  "query_sha256": {
+    "longest_missing_runs.sql": "0e2bb05b162066009463c058a09926bd3b5e03feb868ff37818fe4b206e53619",
+    "schema.sql": "b5527273b1ea2875392643ed40a886fb9f17821951fd4028c48ef56ba4df9744",
+    "reconcile_totals.sql": "9efdaa753af23664fa2e5d257412189c66458f0ab6f79ad631dd1eda707bece1",
+    "missing_runs.sql": "770f9264596383334b433a7d6e4198030895c741cd9ddfa76417619974b00f08",
+    "missingness_by_month.sql": "e50c3e34e76ecb98dee495eb5c496709182b672f794befa47ec7dba38c2c71d8"
+  }
+}

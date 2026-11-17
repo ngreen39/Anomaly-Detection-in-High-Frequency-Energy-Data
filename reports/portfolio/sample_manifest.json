@@ -1,0 +1,92 @@
+{
+  "seed": 42,
+  "purpose": "Illustrative samples only; metrics use full evaluation sets",
+  "sources": [
+    {
+      "source": "reports/exceptions.csv",
+      "source_rows": 181853,
+      "sample_rows": 70,
+      "sample": "samples/exceptions_sample.csv",
+      "selection": "Up to 10 per field/rule",
+      "source_sha256": "21c8f9ac3fff4f221049bd5f23efce265c6d06a48921f99d3937fa702e7ad8fa",
+      "sample_sha256": "0d7bd21a7e499080cbd47354ad3cfca53762f00665cd1a52750db3643b9e1f2c"
+    },
+    {
+      "source": "reports/revised_analysis/model_alerts.csv",
+      "source_rows": 10433,
+      "sample_rows": 40,
+      "sample": "samples/model_alerts_sample.csv",
+      "selection": "Up to 20 per scenario/imputation status; nonexistent alert groups are not invented",
+      "source_sha256": "df252cc965575988bc535c53c3eecf84f9c17d33bfd01cef63b9c75186ae3441",
+      "sample_sha256": "52c3e956beea3809334caaa41174969c06eac474d061c7bcb258e360016ef017"
+    },
+    {
+      "source": "reports/revised_analysis/measurement_policy_records.csv",
+      "source_rows": 25979,
+      "sample_rows": 96,
+      "sample": "samples/measurement_policy_records_sample.csv",
+      "selection": "All 76 imputed source records plus up to 20 unfilled records; complete imputed runs retained",
+      "source_sha256": "65bf06c500de6ed359392fb78b40fff1cd38d649ff54f07eee541cd5761bd30e",
+      "sample_sha256": "0f9c0f227dacadb145e776426bf657009ca6712f12ba0b3541d2bedc1c63f0af"
+    },
+    {
+      "source": "reports/revised_analysis/training_sample_ids.csv",
+      "source_rows": 184132,
+      "sample_rows": 80,
+      "sample": "samples/training_sample_ids_sample.csv",
+      "selection": "Up to 20 per algorithm/scenario",
+      "source_sha256": "0616535d1912189b25847bec9fdf47c4f7b1d2e28ee628724ac451ccd4eaaebb",
+      "sample_sha256": "53af4bbc9119d34843478a0f5d44e8ef742f3d0138f7f70e1bc1748deab3cce0"
+    },
+    {
+      "source": "reports/revised_analysis/synthetic_proxy_evaluation.csv",
+      "source_rows": 40000,
+      "sample_rows": 80,
+      "sample": "samples/synthetic_proxy_evaluation_sample.csv",
+      "selection": "20 source IDs; keep all paired scenarios and synthetic/original copies for those IDs",
+      "source_sha256": "7f7c66679991b528d02fd6943eecb06c13cdcffd865a287c39ce8f49a73898da",
+      "sample_sha256": "bdbba058391b2d4f826eb32a2f1a5de6fcfa4770765a6c686a5af0d5cfe64e9a"
+    },
+    {
+      "source": "reports/revised_analysis/regression_prediction_sample.csv",
+      "source_rows": 10000,
+      "sample_rows": 40,
+      "sample": "samples/regression_prediction_sample.csv",
+      "selection": "20 source IDs; keep all paired scenarios and synthetic/original copies for those IDs",
+      "source_sha256": "aab84264d870c91afc1cb3d97dd5b0552391756e87af83acbd9600ce3ff5916d",
+      "sample_sha256": "34ae5aaf2075e47268fbeae14eac0bcba5adfbefae472982af7352840b168ad9"
+    },
+    {
+      "source": "reports/missing_data_evaluation/selected_windows.csv",
+      "source_rows": 6400,
+      "sample_rows": 64,
+      "sample": "samples/selected_windows_sample.csv",
+      "selection": "Up to 2 complete windows per partition/season/time-of-day stratum",
+      "source_sha256": "285e15509e2553df6545d788339683e080bac921acdbe82dfa78733ee0d6b915",
+      "sample_sha256": "3fce396ddf663c3d4e7e8646e36731850422c8a90e19e4fe5e17fb140eda6f8a"
+    },
+    {
+      "source": "reports/missing_data_evaluation/sampled_truth.csv",
+      "source_rows": 204800,
+      "sample_rows": 2048,
+      "sample": "samples/sampled_truth_sample.csv",
+      "selection": "Keep every truth point or mask scenario for the same selected complete windows",
+      "source_sha256": "b8e30c4990c0f8c00668846ad1f6aeb9ccffa359b91853fcd0cae44f220134ad",
+      "sample_sha256": "87daf5b3f83c178579bc1b4e1dfae2eb81b0d7729d7db5cba1ebe7c4a8a62d67"
+    },
+    {
+      "source": "reports/missing_data_evaluation/mask_manifest.csv",
+      "source_rows": 32000,
+      "sample_rows": 320,
+      "sample": "samples/mask_manifest_sample.csv",
+      "selection": "Keep every truth point or mask scenario for the same selected complete windows",
+      "source_sha256": "1b622624bc660b94c47a25c109af81dffb36713b30dd1d24a886bd0328886a82",
+      "sample_sha256": "524365af09da1fae2663d8fca08a73d0639bb59ac3dc96299c0acaba4896ab87"
+    }
+  ],
+  "chart": {
+    "source": "reports/missing_data_evaluation/metrics.csv",
+    "source_sha256": "d0a61936329a238f9fa62d79a1c225f4e102d9c84edd0744dc88370cd6c231cb",
+    "transform": "Existing rmse_over_sd \u00d7 100, separately for each field; no combined score"
+  }
+}

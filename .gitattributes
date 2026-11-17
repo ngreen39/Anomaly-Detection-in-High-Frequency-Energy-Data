@@ -1,0 +1,4 @@
+# Consistent CSV line endings without changing measurement text or values.
+*.csv text eol=lf
+# Matplotlib emits intentional whitespace inside multiline SVG path attributes.
+*.svg whitespace=-blank-at-eol

@@ -1,0 +1,107 @@
+{
+  "source_file": "household_power_consumption.txt",
+  "source_sha256": "4259c9d7ece5dbee9ab8d53682baac68d791c864f0f64a52b4043cb3b90894b7",
+  "sql_sha256": {
+    "missingness_by_month.sql": "e9b8f98f119a5b30d084ee467a6dfa7c7004d35e67da89c8f87cbd646d8b91d0",
+    "missing_runs.sql": "8e2eb0876ba43c950f9b32ade2340630a7a9ef68b7b07ff60be6b7c38a2872ed",
+    "longest_missing_runs.sql": "1f527e9dec3f5e33f0a332e4b6296a37cedcc33dae03bcde6975c1934b5d37ac",
+    "reconcile_totals.sql": "3515847d7d7af97a23fd60833b6fface91c1af4884441d084e55824cc0271883"
+  },
+  "counts": {
+    "source_rows": 2075259,
+    "duplicate_rows": 0,
+    "duplicate_timestamps": 0,
+    "invalid_timestamps": 0,
+    "off_minute_timestamps": 0,
+    "missing_measurement_rows": 25979,
+    "all_measurements_missing_rows": 25979,
+    "missing_measurement_cells": 181853,
+    "invalid_numeric_cells": 0,
+    "negative_cells": 0,
+    "infinite_cells": 0,
+    "absent_timestamp_rows": 0,
+    "missing_run_count": 71,
+    "missing_minutes_in_runs": 25979,
+    "longest_missing_run_minutes": 7226
+  },
+  "per_field": {
+    "Global_active_power": {
+      "missing": 25979,
+      "invalid_numeric": 0,
+      "negative": 0,
+      "infinite": 0
+    },
+    "Global_reactive_power": {
+      "missing": 25979,
+      "invalid_numeric": 0,
+      "negative": 0,
+      "infinite": 0
+    },
+    "Voltage": {
+      "missing": 25979,
+      "invalid_numeric": 0,
+      "negative": 0,
+      "infinite": 0
+    },
+    "Global_intensity": {
+      "missing": 25979,
+      "invalid_numeric": 0,
+      "negative": 0,
+      "infinite": 0
+    },
+    "Sub_metering_1": {
+      "missing": 25979,
+      "invalid_numeric": 0,
+      "negative": 0,
+      "infinite": 0
+    },
+    "Sub_metering_2": {
+      "missing": 25979,
+      "invalid_numeric": 0,
+      "negative": 0,
+      "infinite": 0
+    },
+    "Sub_metering_3": {
+      "missing": 25979,
+      "invalid_numeric": 0,
+      "negative": 0,
+      "infinite": 0
+    }
+  },
+  "timestamp_range": {
+    "start": "2006-12-16 17:24:00",
+    "end": "2010-11-26 21:02:00"
+  },
+  "missing_rows_without_grid_timestamp": 0,
+  "runs_longer_than_60_minutes": 9,
+  "runs_longer_than_1440_minutes": 6,
+  "exception_records": 181853,
+  "sql_totals": {
+    "source_rows": 2075259,
+    "duplicate_rows": 0,
+    "duplicate_timestamps": 0,
+    "invalid_timestamps": 0,
+    "off_minute_timestamps": 0,
+    "missing_measurement_rows": 25979,
+    "all_measurements_missing_rows": 25979,
+    "missing_measurement_cells": 181853,
+    "invalid_numeric_cells": 0,
+    "negative_cells": 0,
+    "infinite_cells": 0,
+    "absent_timestamp_rows": 0,
+    "missing_run_count": 71,
+    "missing_minutes_in_runs": 25979,
+    "longest_missing_run_minutes": 7226
+  },
+  "sql_monthly_totals": {
+    "source_rows": 2075259,
+    "missing_measurement_rows": 25979,
+    "missing_measurement_cells": 181853,
+    "absent_timestamp_rows": 0
+  },
+  "reconciliation": {
+    "totals_match": true,
+    "monthly_totals_match": true,
+    "all_runs_match": true
+  }
+}
